@@ -1,3 +1,4 @@
+#encoding: utf-8
 form = FormSelectors.new(@driver)
 page = TestSuite.new(@driver)
 main_result = SelectorsFormResponse.new(@driver)
@@ -7,7 +8,8 @@ Dado(/^que acesse a tela de formulario$/) do
 end
 
 Dado(/^preencher os campos do formulario\.$/) do |table|
-  page.test_form_fill(form, table)
+  data = table.rows_hash
+  page.test_form_fill(form, data['texto'], data['language'], data['question'], data['versions'])
 end
 
 Dado(/^Selecionar a opcao "([^"]*)"$/) do |arg1|
@@ -19,6 +21,6 @@ end
 Então(/^Deve informar uma mensagem de sucesso "([^"]*)"\.$/) do |arg1|
   resultado =  page.result(main_result)
   puts resultado
-  expect(resultado).to eq("Thank you for playing with Watir-WebDriver")
+  expect(resultado) == ("Thank you for playing with Watir-WebDriver")
   page.close
 end
