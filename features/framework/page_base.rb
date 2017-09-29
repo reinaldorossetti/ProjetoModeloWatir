@@ -17,7 +17,8 @@ class PageBase
       element.send_keys value
     end
   rescue Selenium::WebDriver::Error::UnexpectedAlertOpenError
-    sleep 3
+    sleep 2
+    @driver.alert.ok
     retry
   end
 
@@ -37,7 +38,7 @@ class PageBase
   rescue => ex
     puts ex.message
     puts ex.backtrace
-    print "Tentando via javascript"
+    false
 
   end
 
@@ -63,6 +64,10 @@ class PageBase
   rescue => ex
     puts ex.message
     false
+  end
+
+  def obter_evidencia
+    $encoded_img = @driver.driver.screenshot_as(:base64)
   end
 
 end

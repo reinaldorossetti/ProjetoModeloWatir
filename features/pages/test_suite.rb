@@ -47,6 +47,5 @@ class TestSuite < PageBase
   def result(menu_result)
     elem = menu_result.result_end.wait_until_present
     elem.text
-    #puts menu_result.result_end.wait_until_present.text.to_s
   end
 end
