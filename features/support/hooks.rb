@@ -3,7 +3,7 @@ Before do |feature|
 end
 
 After do |feature|
-  puts feature.name
+  # puts feature.name
 end
 
 Before do |scenario|

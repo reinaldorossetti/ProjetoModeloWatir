@@ -21,9 +21,9 @@ Funcionalidade: Formulario
     Dado que acesse a tela de formulario
     E preencher os campos do formulario.
       | texto    | 1234567890 |
-      | language | Python                                        |
-      | question | A gem                                         |
-      | versions | 1.9.2                                         |
+      | language | Python     |
+      | question | A gem      |
+      | versions | 1.9.2      |
     E Selecionar a opcao "Enviar"
     Então Deve informar uma mensagem de sucesso "Thank you for playing with Watir-WebDriver".
 

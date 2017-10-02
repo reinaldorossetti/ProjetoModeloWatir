@@ -6,6 +6,8 @@ class PageBase
     @driver = browser
   end
 
+
+
   def preencher(element, value)
 
     result = element_exists?(element)
