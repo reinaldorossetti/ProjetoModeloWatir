@@ -37,10 +37,10 @@ gem install 'pry-stack_explorer'
   end
 ```
 
-- No exemplo acima podemos dar o comando step para ir para a função "element_exists".<br>
-- Caso queira pular o "element_exists" e somente executar a próxima linha mando o comando next.<br>
-- Para ver o resultado de result, eu digito o nome da variável "result" no terminal.<br>
-- Para finalizar esse bloco de código eu dou finish.<br>
+- No exemplo acima podemos dar o comando "step" para ir para a função "element_exists".<br>
+- Caso queira pular o "element_exists" é somente executar a próxima linha mando o comando "next".<br>
+- Para ver o resultado do element_exists?, eu digito o nome da variável "result" no terminal.<br>
+- Para finalizar esse bloco de código eu dou "finish".<br>
 - Se você já conseguiu fazer o que queria, podemos dar o comando "continue" no terminal que vai continuar com o teste e finalizar o pry.<br>
 
 
