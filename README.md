@@ -64,4 +64,7 @@ Na imagem acima eu enviei o comando "cucumber --tags  @CT001-form_fill-ruby" no 
 
 ![alt result](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/result.PNG)
 
+Abaixo vemos o resultado do comando element.send_keys "teste" no browser.
+
+![alt test_browser](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/test_browser.PNG)
 
