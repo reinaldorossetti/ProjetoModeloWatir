@@ -44,14 +44,14 @@ Para finalizar esse bloco de código eu dou finish.
 Se você já conseguiu fazer o que queria, podemos dar o comando "continue" no terminal que vai continuar com o teste e finalizar o pry.
 
 
-**step**: Etapa de execução na próxima linha ou método. Toma um argumento numérico opcional para passar várias vezes.
+**step**: Etapa de execução na próxima linha ou método. Toma um argumento numérico opcional para passar várias vezes.<br>
 
-**next**: Passar para a próxima linha dentro do mesmo nível. Também leva um argumento numérico opcional para executar várias linhas.
+**next**: Passar para a próxima linha dentro do mesmo nível. Também leva um argumento numérico opcional para executar várias linhas.<br>
 
-**finish**: Execute o bloco de código atual até retornar um nível acima.
+**finish**: Execute o bloco de código atual até retornar um nível acima.<br>
 
-**continue**: Continue a execução do programa e termina a sessão do Pry.
+**continue**: Continue a execução do programa e termina a sessão do Pry.<br>
 
-Para mostrar os valores das variáveis é somente digitar o nome dela.
+Para mostrar os valores das variáveis é somente digitar o nome dela.<br>
 
 ** Você também pode digitar um comando do watir no terminal sem problema.
