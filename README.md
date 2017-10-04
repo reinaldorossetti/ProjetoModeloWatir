@@ -60,5 +60,8 @@ Para mostrar os valores das variáveis é somente digitar o nome dela.<br>
 
 ![alt pry_debugger](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/pry_debugger.png)
 
-Na imagem acima eu enviei o comando "cucumber --tags  @CT001-form_fill-ruby" no terminal e coloquei o "binding.pry" no exato ponto que desejo fazer o debugging no código, como mostrei no post é super fácil descobrir os erros usando a gem do pry, se der erro no seu código, você pode tentar usar os comandos até descobrir o comando correto pra uma determinada ação no seu teste.
+Na imagem acima eu enviei o comando "cucumber --tags  @CT001-form_fill-ruby" no terminal e coloquei o "binding.pry" no exato ponto que desejo fazer o debugging no código, como mostrei no post é super fácil descobrir os erros usando a gem do pry, se der erro no seu código, você pode tentar usar os comandos até descobrir o comando correto pra uma determinada ação no seu teste, como fiz abaixo, fiz o "next", e depois verifiquei o "result" e depois digitei um comando que não estava no bloco de código.
+
+![alt result](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/result.PNG)
+
 
