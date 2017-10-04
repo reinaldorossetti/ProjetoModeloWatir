@@ -54,4 +54,4 @@ gem install 'pry-stack_explorer'
 
 Para mostrar os valores das variáveis é somente digitar o nome dela.<br>
 
-** Você também pode digitar um comando do watir no terminal sem problema.
+** O mais legal de tudo, é que você também pode digitar um comando do watir no terminal sem problema.
