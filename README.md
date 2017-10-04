@@ -2,7 +2,7 @@
 Modelo de uso do Page Object com o Framework Watir.
 
 
-## Como fazer o debugger do cucumber no terminal.
+## Como depurado/debugger do seu código usando cucumber no terminal.
 O primeiro passo é a instalação das gems abaixo, abra o terminal/shell e envie os comandos para instalar das gems.
 ```
 gem install pry
