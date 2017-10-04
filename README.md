@@ -16,8 +16,8 @@ require 'pry'
 ```
 ## Gems adicionais pra fazer remote e com stack.
 ```
-gem install 'pry-remote'
-gem install 'pry-stack_explorer'
+gem install pry-remote
+gem install pry-stack_explorer
 ```
 
 ## O terceiro passo é colocar o comando "binding.pry" no ponto que deseja fazer o debugger
