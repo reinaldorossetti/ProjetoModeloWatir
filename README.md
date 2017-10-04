@@ -8,7 +8,7 @@ O primeiro passo é a instalação das gems abaixo, abra o terminal/shell e envi
 gem install 'pry'
 gem install 'pry-debugger'
 ```
-## O segundo passo é adicionar o require abaixo no env.rb
+## O segundo passo é adicionar o require abaixo no "env.rb" do projeto.
 ```ruby
 require 'pry' 
 ```
