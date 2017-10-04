@@ -8,6 +8,8 @@ O primeiro passo é a instalação das gems abaixo, abra o terminal/shell e envi
 gem install 'pry'
 gem install 'pry-debugger'
 ```
+![alt install](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/install_pry.png)
+
 ## O segundo passo é adicionar o require abaixo no "env.rb" do projeto.
 ```ruby
 require 'pry' 
