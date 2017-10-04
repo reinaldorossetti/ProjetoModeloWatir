@@ -56,4 +56,4 @@ Para mostrar os valores das variáveis é somente digitar o nome dela.<br>
 
 ** O mais legal de tudo, é que você também pode digitar um comando do watir no terminal sem problema.
 
-[[https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/pry_debugger.png|alt=pry_debugger]]
+![alt pry_debugger](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/pry_debugger.png)
