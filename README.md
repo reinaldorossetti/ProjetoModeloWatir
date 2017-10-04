@@ -1,24 +1,24 @@
-# ProjetoModeloWatir
+## ProjetoModeloWatir
 Modelo de uso do Page Object com o Framework Watir.
 
 
-# Como fazer o debugger do cucumber no terminal.
+## Como fazer o debugger do cucumber no terminal.
 O primeiro passo é a instalação da gems abaixo.
 ```
 gem install 'pry'
 gem install 'pry-debugger'
 ```
-# O segundo passo é adicionar o require abaixo no env.rb
+## O segundo passo é adicionar o require abaixo no env.rb
 ```ruby
 require 'pry' 
 ```
-# Gems adicionais pra fazer remote e com stack.
+## Gems adicionais pra fazer remote e com stack.
 ```
 gem install 'pry-remote'
 gem install 'pry-stack_explorer'
 ```
 
-# O terceiro passo é colocar o comando "binding.pry" no ponto que deseja fazer o debugger
+## O terceiro passo é colocar o comando "binding.pry" no ponto que deseja fazer o debugger
 ```ruby
   def preencher(element, value)
     binding.pry
@@ -44,13 +44,13 @@ Para finalizar esse bloco de código eu dou finish.
 Se você já conseguiu fazer o que queria, podemos dar o comando "continue" no terminal que vai continuar com o teste e finalizar o pry.
 
 
-step: Etapa de execução na próxima linha ou método. Toma um argumento numérico opcional para passar várias vezes.
+**step**: Etapa de execução na próxima linha ou método. Toma um argumento numérico opcional para passar várias vezes.
 
-next: Passar para a próxima linha dentro do mesmo nível. Também leva um argumento numérico opcional para executar várias linhas.
+**next**: Passar para a próxima linha dentro do mesmo nível. Também leva um argumento numérico opcional para executar várias linhas.
 
-finish: Execute o bloco de código atual até retornar um nível acima.
+**finish**: Execute o bloco de código atual até retornar um nível acima.
 
-continue: Continue a execução do programa e termina a sessão do Pry.
+**continue**: Continue a execução do programa e termina a sessão do Pry.
 
 Para mostrar os valores das variáveis é somente digitar o nome dela.
 
