@@ -4,6 +4,7 @@ require 'rspec/expectations/handler'
 require "tapestry"
 require 'watir'
 require 'selenium-webdriver'
+require 'magic_encoding'
 #require 'pry'
 
 Dir["../framework/*.rb"].each {|file| require file; puts file }
@@ -17,7 +18,7 @@ Watir.default_timeout = 90 # timeout interno de espera do watir.
 
 case ENV['BROWSER']
   when 'ie'
-    browser = Watir::Browser.new :ie, :http_client => client
+    $driver = Watir::Browser.new :ie, :http_client => client
   when 'ff'
     profile = Selenium::WebDriver::Firefox::Profile.new
     profile['browser.download.dir'] = 'c:\Downloads'
@@ -25,10 +26,9 @@ case ENV['BROWSER']
     profile['browser.helperApps.neverAsk.saveToDisk'] = 'application/zip'
     profile['pdfjs.disabled'] = true
   when 'chrome'
-    browser = Watir::Browser.new :chrome
+    $driver = Watir::Browser.new :chrome
   else
-    browser = Watir::Browser.new :ie, :http_client => client
+    $driver = Watir::Browser.new :ie, :http_client => client
 end
-$driver = browser
 
-browser.goto('http://bit.ly/watir-webdriver-demo')
+$driver.goto('http://bit.ly/watir-webdriver-demo')

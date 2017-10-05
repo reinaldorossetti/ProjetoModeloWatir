@@ -1,28 +1,27 @@
 #encoding: utf-8
+require 'magic_encoding'
+
+page = TestSuite.new($driver)
+main_result = SelectorsFormResponse.new($driver)
+pb = PageBase.new
 
 Dado(/^que acesse a tela de formulario$/) do
-  @form = FormSelectors.new($driver)
-  @page = TestSuite.new($driver)
-  @main_result = SelectorsFormResponse.new($driver)
-  @pb = PageBase.new($driver)
-  expect($driver.title).to eq("Watir-WebDriver Demo")
+  pb.validar(pb.titulo, "Watir-Webdriver Demo")
 end
 
 Dado(/^preencher os campos do formulario\.$/) do |table|
   data = table.rows_hash
-  @page.test_form_fill(@form, data['texto'], data['language'], data['question'], data['versions'])
-  @pb.obter_evidencia
+  page.preencher_formulario(data['texto'], data['language'], data['question'], data['versions'])
+  pb.obter_evidencia
 end
 
 Dado(/^Selecionar a opcao "([^"]*)"$/) do |arg1|
-  if arg1 == "Enviar"
-    @page.submit(@form)
-  end
+  page.enviar_formulario if arg1 == "Enviar"
 end
 
 Então(/^Deve informar uma mensagem de sucesso "([^"]*)"\.$/) do |arg1|
-  resultado =  @page.result(@main_result)
-  expect(resultado) == ("Thank you for playing with Watir-WebDriver")
-  @pb.obter_evidencia
-  @pb.close
+  resultado =  pb.texto(main_result)
+  pb.validar(resultado, arg1)
+  pb.obter_evidencia
+  pb.fechar
 end

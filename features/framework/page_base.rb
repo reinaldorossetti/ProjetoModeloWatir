@@ -2,10 +2,6 @@
 class PageBase
   include Tapestry
 
-  def initialize(browser)
-    @driver = browser
-  end
-
   def preencher(element, value)
     #binding.pry
     result = element_exists?(element)
@@ -13,12 +9,12 @@ class PageBase
       # to_subtype - convert the input into the more specific type in text field to clear field.
       element.to_subtype.clear
       element.focus
-      element.flash(color: "yellow")
+      #element.flash(color: "yellow")
       element.send_keys value
     end
   rescue Selenium::WebDriver::Error::UnexpectedAlertOpenError
     sleep 2
-    @driver.alert.ok
+    $driver.alert.ok
     retry
   end
 
@@ -52,14 +48,14 @@ class PageBase
   rescue => ex
     puts ex.message
     puts ex.backtrace
-    print "Tela #{@driver.title} - Elemento '#{web_element.inspect}' não encontrado."
+    print "Tela #{$driver.title} - Elemento '#{web_element.inspect}' não encontrado."
     false
 
   end
 
   def scroll_to_element(elem)
 
-    @driver.execute_script('arguments[0].scrollIntoView();', elem)
+    $driver.execute_script 'arguments[0].scrollIntoView();', elem
 
   rescue => ex
     puts ex.message
@@ -67,11 +63,24 @@ class PageBase
   end
 
   def obter_evidencia
-    $encoded_img = @driver.driver.screenshot_as(:base64)
+    $encoded_img = $driver.driver.screenshot_as(:base64)
   end
 
-  def close
-    @driver.quit
+  def fechar
+    $driver.quit
+  end
+
+  def titulo
+    $driver.title
+  end
+
+  def texto(menu_result)
+    elem = menu_result.result_end
+    elem.text if element_exists?(elem)
+  end
+
+  def validar(resultado, valor)
+    expect(resultado) == (valor)
   end
 
 end

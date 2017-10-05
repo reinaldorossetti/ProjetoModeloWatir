@@ -1,4 +1,3 @@
-
 class SelectorsFormResponse
   include Tapestry
 
@@ -20,7 +19,7 @@ class FormSelectors
   button(:submit, name: 'submit')
 
   # exemplo usando o iframe
-  iframe :pesquisa_cliente, name: 'principal'
-  input :something, -> { pesquisa_cliente.input(id: 'pesqMestreCodCliente') }
+  # iframe :pesquisa_cliente, name: 'principal'
+  # input :something, -> { pesquisa_cliente.input(id: 'pesqMestreCodCliente') }
 
 end
