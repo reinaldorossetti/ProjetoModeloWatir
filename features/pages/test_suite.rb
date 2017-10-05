@@ -40,10 +40,6 @@ class TestSuite < PageBase
     @driver.title
   end
 
-  def close
-    @driver.quit
-  end
-
   def result(menu_result)
     elem = menu_result.result_end.wait_until_present
     elem.text

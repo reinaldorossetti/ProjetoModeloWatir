@@ -5,7 +5,7 @@ Dado(/^que acesse a tela de formulario$/) do
   @page = TestSuite.new($driver)
   @main_result = SelectorsFormResponse.new($driver)
   @pb = PageBase.new($driver)
-  expect(@page.title).to eq("Watir-WebDriver Demo")
+  expect($driver.title).to eq("Watir-WebDriver Demo")
 end
 
 Dado(/^preencher os campos do formulario\.$/) do |table|
@@ -22,8 +22,7 @@ end
 
 Então(/^Deve informar uma mensagem de sucesso "([^"]*)"\.$/) do |arg1|
   resultado =  @page.result(@main_result)
-  # puts resultado
   expect(resultado) == ("Thank you for playing with Watir-WebDriver")
   @pb.obter_evidencia
-  @page.close
+  @pb.close
 end

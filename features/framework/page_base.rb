@@ -6,10 +6,8 @@ class PageBase
     @driver = browser
   end
 
-
-
   def preencher(element, value)
-
+    #binding.pry
     result = element_exists?(element)
     if result
       # to_subtype - convert the input into the more specific type in text field to clear field.
@@ -70,6 +68,10 @@ class PageBase
 
   def obter_evidencia
     $encoded_img = @driver.driver.screenshot_as(:base64)
+  end
+
+  def close
+    @driver.quit
   end
 
 end
