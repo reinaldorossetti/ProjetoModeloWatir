@@ -9,9 +9,9 @@ gem install watir
 
 Agora você pode experimentá-lo, abrindo uma sessão Interactive Ruby (irb).<br>
 
-     Se você estiver usando o Mac OS X, abra o Terminal e digite **"irb"** sem as aspas duplas, então pressione enter.<br><br>
-     Se você estiver usando o Linux, abra um shell e **"irb"** sem as aspas duplas, então pressione enter.<br>
-     Se você estiver usando o Windows, abra o prompt e digite **"irb"** sem as aspas duplas, então pressione enter.
+     Se você estiver usando o Mac OS X, abra o Terminal e digite "irb" sem as aspas duplas, então pressione enter.<br><br>
+     Se você estiver usando o Linux, abra um shell e "irb" sem as aspas duplas, então pressione enter.<br>
+     Se você estiver usando o Windows, abra o prompt e digite "irb" sem as aspas duplas, então pressione enter.
 
 Agora você só precisa da o **"require 'watir'"**, sem as aspas duplas para usar o framework do watir.<br>
 
