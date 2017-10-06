@@ -13,7 +13,7 @@ Agora você pode experimentá-lo, abrindo uma sessão Interactive Ruby (irb).<br
      Se você estiver usando o Linux, abra um shell e "irb" sem as aspas duplas, então pressione enter.<br>
      Se você estiver usando o Windows, abra o prompt e digite "irb" sem as aspas duplas, então pressione enter.
 
-Agora você só precisa da o **"require 'watir'"**, sem as aspas duplas para usar o framework do watir.<br>
+Agora você só precisa dar o "require 'watir'" no console do irb, sem as aspas duplas para usar o framework do watir.<br>
 
 ![irb watir](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/irb_watir.PNG)<br>
 
