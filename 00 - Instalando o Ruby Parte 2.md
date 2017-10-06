@@ -34,4 +34,4 @@ O Comando Instala o DevKit, vinculando-o à sua instalação do Ruby.
 ruby dk.rb install
 ```
 Como mostra o exemplo abaixo:
-![Ruby DevKit02](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/prompt.PNG)<br>
+![Instalando o DevKit](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/promptDevKit.PNG)<br>
