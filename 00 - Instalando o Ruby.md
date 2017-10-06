@@ -15,4 +15,4 @@ Na segunda tela somente vamos marcar os itens que estão em amarelo, como mostra
 Agora temos que aguardar a instalação do Ruby.
 
 ![Ruby Instalando](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/ruby04.PNG)<br>
-Agora a instalação foi finalizada com sucesso, pra fechar somente dar o clique em **"Finish"**.
+Agora a instalação foi finalizada com sucesso, para fechar somente dar o clique em **"Finish"**.
