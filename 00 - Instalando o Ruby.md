@@ -16,3 +16,6 @@ Agora temos que aguardar a instalação do Ruby.
 
 ![Ruby Instalando](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/ruby04.PNG)<br>
 Agora a instalação foi finalizada com sucesso, para fechar somente dar o clique em **"Finish"**.
+
+![Ruby Prompt](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/ruby04.PNG)<br>
+Para ter certeza que instalou e adicionou ao path do windows/linux, abrimos o prompt/shell e digitamos o comando **"ruby -v"**, o resultado do comando mostra a verão do ruby instalada.
