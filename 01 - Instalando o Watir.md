@@ -14,4 +14,4 @@ Agora você pode experimentá-lo, abrindo uma sessão Interactive Ruby (irb).
      Se você estiver usando o Windows, abra o prompt e digite **"irb"** sem as aspas duplas, então pressione enter.
 
 Agora você só precisa da o **"require 'watir'"** para usar o framework do watir.
-![irb watir](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/irb_install.PNG)<br>
+![irb watir](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/irb_watir.PNG)<br>
