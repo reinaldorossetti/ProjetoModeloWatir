@@ -16,3 +16,22 @@ A imagem mostra o caminho já adicionado.
 Agora somente dar o clique em **"Extract"**, após isso é somente esperar finalizar a barra de instalação, que automaticamente vai fechar a telinha.
 
 
+Agora vamos abrir o prompt do windows e digitar os seguintes comandos abaixos:
+Comando pra voltar a pasta raiz:
+```prompt
+cd\
+```
+Comando para entrar dentro da pasta RubyDevKit
+```prompt
+cd RubyDevKit
+```
+Comando para Detectar automaticamente a instalação do Ruby e adicione-as a um arquivo de configuração para a próxima etapa.
+```prompt
+ruby dk.rb init
+```
+O Comando Instala o DevKit, vinculando-o à sua instalação do Ruby.
+```prompt
+ruby dk.rb install
+```
+Como mostra o exemplo abaixo:
+![Ruby DevKit02](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/prompt.PNG)<br>
