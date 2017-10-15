@@ -5,7 +5,9 @@ Modelo de uso do Page Object com o Framework Watir.
 ## Como usar o depurador/debugger do seu código usando cucumber no terminal.
 O primeiro passo é a instalação das gems abaixo, abra o terminal/shell e envie os comandos para instalar das gems.
 ```
-gem install pry
+gem install pry -v 0.10.4
+gem install debugger-ruby_core_source -v '1.1.6'
+gem install debugger
 gem install pry-debugger
 ```
 ![alt install](https://github.com/reinaldorossetti/ProjetoModeloWatir/blob/master/imgs/install_pry.PNG)
